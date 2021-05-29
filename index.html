@@ -18,8 +18,7 @@
   <header class="header">
     <class class="header_">
       <img class="logo" src="img/logo.png" />
-      <span><a class="menu" href="#">menu</a></span>
-      <!-- side bar -->
+      <span><a onclick="navmenu()" href="javascript:void(0);" class="menu" href="#">menu</a></span>
 
       <div class="header_right">
         <ul>
@@ -41,10 +40,27 @@
             document.getElementsByClassName("wa")[0].classList.toggle("icon_invers")
             document.getElementsByClassName("ig")[0].classList.toggle("icon_invers")
           }
+
+          function navmenu() {
+            var x = document.getElementsByClassName("header_right")[0];
+            var y = document.getElementsByClassName("menu")[0];
+            var z = document.getElementsByClassName("close_icon")[0];
+            if (x.style.display === "block") {
+              x.style.display = "none";
+              y.style.display = "block";
+              z.style.display = "none";
+            } else {
+              x.style.display = "block";
+              y.style.display = "none";
+              z.style.display = "block";
+            }
+          }
         </script>
       </div>
+      <a onclick="navmenu()" href="javascript:void(0);" class="close_icon" href="#">menu</a>
       </div>
   </header>
+  <div class="container"></div>
   <div class="banner_hero" id="hero">
     <div class="container">
       <div class="baner_content">
@@ -93,7 +109,7 @@
         </div>
       </div>
       <div class="profile_image">
-        <img src="img/Profile.png" class="img_style"/>
+        <img src="img/Profile.png" class="img_style" />
       </div>
     </div>
   </div>
