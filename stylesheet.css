@@ -283,6 +283,8 @@ body {
   display: none;
 }
 
+
+
 .header_ {
   display: flex;
   justify-content: space-between;
@@ -480,3 +482,7 @@ header {
 
 
 /* SIDE BAR */
+
+.close_icon {
+  display: none;
+}
