@@ -177,7 +177,13 @@
 
 
     }
+}
 
 
+/*This is to fix my image*/
 
+@media(max-width:565px) {
+    .edu1_image {
+        padding: 10px;
+    }
 }
