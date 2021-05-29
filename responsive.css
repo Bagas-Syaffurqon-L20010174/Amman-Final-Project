@@ -70,6 +70,10 @@
     }
 
 
+    .close_icon {
+        display: none;
+    }
+
 
 }
 
@@ -78,6 +82,8 @@
 @media(max-width:670px) {
     .header_right {
         display: none;
+        margin-right: 0px;
+        margin-top: 15px;
     }
 
     .menu {
@@ -174,13 +180,24 @@
     .baner_content p {
         margin-top: 20px;
         margin-bottom: 20px;
-
-
     }
+
+    .close_icon {
+        display: none;
+    }
+
+    .close_icon {
+        width: 40px;
+        height: 40px;
+        background-image: url(img/close_icon.png);
+        display: inline-block;
+        background-repeat: no-repeat;
+        text-indent: -9999px;
+        margin-right: 28px;
+        margin-top: 8px;
+    }
+
 }
-
-
-/*This is to fix my image*/
 
 @media(max-width:565px) {
     .edu1_image {
