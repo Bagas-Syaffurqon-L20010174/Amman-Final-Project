@@ -14,12 +14,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet" />
 </head>
 
-<body>
+<body onresize="myFunction2()">
   <header class="header">
     <class class="header_">
       <img class="logo" src="img/logo.png" />
-      <span><a onclick="navmenu()" href="javascript:void(0);" class="menu" href="#">menu</a></span>
-
       <div class="header_right">
         <ul>
           <li><a href="#hero" class="header_text">About Me</a></li>
@@ -41,23 +39,28 @@
             document.getElementsByClassName("ig")[0].classList.toggle("icon_invers")
           }
 
+          function myFunction2() {
+            var w = window.innerWidth;
+            var x = document.getElementsByClassName("header_right")[0];
+            if (w > 670) {
+              x.style.display = "block"
+            } else {
+              x.style.display = "none"
+            }
+          }
+
           function navmenu() {
             var x = document.getElementsByClassName("header_right")[0];
-            var y = document.getElementsByClassName("menu")[0];
-            var z = document.getElementsByClassName("close_icon")[0];
+
             if (x.style.display === "block") {
               x.style.display = "none";
-              y.style.display = "block";
-              z.style.display = "none";
             } else {
               x.style.display = "block";
-              y.style.display = "none";
-              z.style.display = "block";
             }
           }
         </script>
       </div>
-      <a onclick="navmenu()" href="javascript:void(0);" class="close_icon" href="#">menu</a>
+      <a onclick="navmenu()" href="javascript:void(0);" class="menu" href="#">menu</a>
       </div>
   </header>
   <div class="container"></div>
