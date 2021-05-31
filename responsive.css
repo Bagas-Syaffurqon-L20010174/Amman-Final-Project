@@ -69,12 +69,6 @@
 
     }
 
-
-    .close_icon {
-        display: none;
-    }
-
-
 }
 
 /*This is For smarthphone*/
@@ -82,8 +76,18 @@
 @media(max-width:670px) {
     .header_right {
         display: none;
-        margin-right: 0px;
-        margin-top: 15px;
+        margin: auto;
+        flex-grow: 4;
+
+
+    }
+
+    .header_right li {
+        margin-right: 5px;
+        margin-left: 10%;
+        padding-bottom: 10px;
+        padding-top: 10px;
+
     }
 
     .menu {
@@ -97,8 +101,8 @@
         display: inline-block;
         background-repeat: no-repeat;
         text-indent: -9999px;
-        margin-right: 28px;
         margin-top: 8px;
+
     }
 
 
@@ -158,9 +162,10 @@
     }
 
     .profile_image {
-        padding: 0;
-
+        width: 80%;
+        margin-left: 30px;
     }
+
 
     .baner_content {
         padding: 10px 10px;
@@ -182,25 +187,40 @@
         margin-bottom: 20px;
     }
 
-    .close_icon {
-        display: none;
+    .logo {
+        margin: 0px;
     }
 
-    .close_icon {
-        width: 40px;
-        height: 40px;
-        background-image: url(img/close_icon.png);
-        display: inline-block;
-        background-repeat: no-repeat;
-        text-indent: -9999px;
-        margin-right: 28px;
-        margin-top: 8px;
+    .header_ {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
     }
-
 }
 
 @media(max-width:565px) {
     .edu1_image {
         padding: 10px;
     }
+}
+
+@media(max-width:350px) {
+
+    .header_right a {
+        font-size: 14px;
+    }
+
+    .header_right li {
+        margin-right: 0px;
+        margin-left: 20px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+
+    }
+
+    .menu {
+        padding-right: 20px;
+    }
+
 }
