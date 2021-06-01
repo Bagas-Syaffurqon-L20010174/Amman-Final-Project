@@ -34,6 +34,7 @@
             document.getElementsByClassName("header_text")[1].classList.toggle("header_text_dark_mode")
             document.getElementsByClassName("header_text")[2].classList.toggle("header_text_dark_mode")
             document.getElementsByClassName("dark_mode")[0].classList.toggle("new_header")
+            document.getElementsByClassName("topnav")[0].classList.toggle("topnav_dark_mode")
             document.getElementsByClassName("youtube")[0].classList.toggle("icon_invers")
             document.getElementsByClassName("wa")[0].classList.toggle("icon_invers")
             document.getElementsByClassName("ig")[0].classList.toggle("icon_invers")
@@ -41,16 +42,14 @@
 
           function myFunction2() {
             var w = window.innerWidth;
-            var x = document.getElementsByClassName("header_right")[0];
+            var x = document.getElementsByClassName("topnav")[0];
             if (w > 670) {
-              x.style.display = "block"
-            } else {
               x.style.display = "none"
             }
           }
 
           function navmenu() {
-            var x = document.getElementsByClassName("header_right")[0];
+            var x = document.getElementsByClassName("topnav")[0];
 
             if (x.style.display === "block") {
               x.style.display = "none";
@@ -60,10 +59,20 @@
           }
         </script>
       </div>
-      <a onclick="navmenu()" href="javascript:void(0);" class="menu" href="#">menu</a>
+      <!-- TOP NAV -->
+      <a onclick="navmenu()" href="javascript:void(0);" class="menu active" href="#">menu</a>
       </div>
   </header>
-  <div class="container"></div>
+  <div class="topnav">
+    <div id="myLinks">
+      <ul>
+        <li><a href="#hero" class="header_text">AboutMe</a></li>
+        <li><a href="#education" class="header_text">Experience</a></li>
+        <li><a href="#contact" class="header_text">Contact</a></li>
+        <li><a onclick="myFunction()" href="javascript:void(0);" class="dark_mode">DarkMode</a></li>
+      </ul>
+    </div>
+  </div>
   <div class="banner_hero" id="hero">
     <div class="container">
       <div class="baner_content">
