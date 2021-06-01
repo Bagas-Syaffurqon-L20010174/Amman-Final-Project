@@ -445,15 +445,14 @@ html {
 .header {
   width: 100%;
   height: 84px;
-  background-color: rgba(197, 198, 199, 0.8);
+  background-color: rgba(197, 198, 199, 0.9);
   position: fixed;
   z-index: 28;
   top: 0;
-  /* color: #fff; */
 }
 
 .header_dark_mode {
-  background-color: rgba(11, 12, 16, 0.8);
+  background-color: rgba(11, 12, 16, 0.9);
 }
 
 .new_header {
@@ -481,4 +480,45 @@ header {
 }
 
 
-/* SIDE BAR */
+/* TOP NAV */
+
+.topnav {
+  overflow: hidden;
+  background-color: rgba(197, 198, 199, 0.9);
+  position: fixed;
+  margin-top: 83px;
+  width: 100%;
+  height: 20%;
+  display: none;
+}
+
+.topnav li a {
+  font-family: "Kanit", sans-serif;
+  font-size: 34px;
+  font-style: none;
+  transition: color 1s ease;
+}
+
+.topnav li {
+  padding: 10px, 10px, 10px, 0;
+  margin-bottom: 20px;
+}
+
+
+.topnav a:hover {
+  background-color: #66fcf1;
+  color: black;
+  padding-right: 100%;
+}
+
+.topnav_dark_mode {
+  background-color: rgba(11, 12, 16, 0.9);
+}
+
+.topnav_dark_mode li a {
+  color: white;
+}
+
+.buttondrk_mode li a {
+  color: green;
+}
