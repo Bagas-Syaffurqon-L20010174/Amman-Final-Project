@@ -488,20 +488,20 @@ header {
   position: fixed;
   margin-top: 83px;
   width: 100%;
-  height: 20%;
   display: none;
+  transition: display 1s ease;
 }
 
 .topnav li a {
   font-family: "Kanit", sans-serif;
-  font-size: 34px;
+  font-size: 16px;
   font-style: none;
-  transition: color 1s ease;
+
 }
 
 .topnav li {
-  padding: 10px, 10px, 10px, 0;
-  margin-bottom: 20px;
+  padding: 10px, 10px, 10px, 0px;
+  margin-bottom: 10px;
 }
 
 
